@@ -1,5 +1,5 @@
 <template>
-    <div class="container max-w-7xl mx-auto mt-8">
+    <div class="container max-w-6xl mx-auto mt-8">
         <div class="mb-4">
             <h1 class="font-serif text-3xl font-bold underline decoration-gray-400"> Category</h1>
             <div class="flex justify-end">
@@ -49,8 +49,9 @@
                                 </td>
 
                                 <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                                    <div class="text-sm leading-5 text-gray-900">
-                                        {{ categorie.description }}
+
+                                    <div class="form-outline text-600" >
+                                        <textarea class="form-control" disabled rows="2" >{{ categorie.description  }}</textarea>
                                     </div>
                                 </td>
 
@@ -121,7 +122,7 @@
 
     <!--    Product table-->
 
-    <div class="container max-w-7xl mx-auto mt-8">
+    <div class="container max-w-6xl mx-auto mt-8">
         <div class="mb-4">
             <h1 class="font-serif text-3xl font-bold underline decoration-gray-400"> Product</h1>
             <div class="flex justify-end">
@@ -425,7 +426,7 @@ export default {
             this.openCategoreEditModal = !this.openCategoreEditModal;
         },
 
-        updateCategore(param){
+        updateCategore(){
             this.openCategoreEditModal = false;
         },
 

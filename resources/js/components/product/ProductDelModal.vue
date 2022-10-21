@@ -39,7 +39,8 @@
 
 export default {
     name: "ProductDelModal.vue",
-    props:['id','current_page'],
+    props:['id',
+        'current_page'],
     data(){
         return{
             showPrDelModal:false,

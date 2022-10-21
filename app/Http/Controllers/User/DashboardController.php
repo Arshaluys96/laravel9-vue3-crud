@@ -27,7 +27,6 @@ class DashboardController extends Controller
             ->orderBy('id', 'DESC')
             ->paginate(5);
         return response()->json(['categories' => $categories]);
-
     }
 
     /**
@@ -65,7 +64,6 @@ class DashboardController extends Controller
             'status' =>'success',
             'categore'   => $categore,
         ]);
-
     }
 
     public function addProduct(ProductRequest $request)
@@ -128,5 +126,4 @@ class DashboardController extends Controller
             'product' => $product
         ]);
     }
-
 }

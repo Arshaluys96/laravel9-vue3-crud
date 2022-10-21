@@ -109,10 +109,6 @@ export default {
         return{
             categoryId: '',
             openProductEditModal : false,
-            producte: {
-                'name': '',
-                'price': '',
-            },
         }
     },
 

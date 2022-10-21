@@ -1,7 +1,7 @@
 <template>
     <div>
         <div
-             class="w-7/12 m-auto overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
+            class="w-7/12 m-auto overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center flex">
             <div class="relative w-auto my-6 mx-auto max-w-6xl">
                 <!--content-->
                 <div
@@ -32,20 +32,21 @@
                 </div>
             </div>
         </div>
-        <div  class="opacity-25 fixed inset-0 z-40 bg-black"></div>
+        <div class="opacity-25 fixed inset-0 z-40 bg-black"></div>
     </div>
 </template>
 
 <script>
 export default {
     name: "CategoryDelModal.vue",
-    props:['id', 'current_page'],
-    data(){
-      return{
-          showCatDelModal:false,
-      }
+    props: ['id',
+        'current_page'],
+    data() {
+        return {
+            showCatDelModal: false,
+        }
     },
-    methods:{
+    methods: {
         toggleCaDelModal: function () {
             this.showCatDelModal = !this.showCatDelModal;
         },
